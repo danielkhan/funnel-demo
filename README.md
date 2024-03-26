@@ -1,7 +1,8 @@
 # React Funnel Sample Application
 
 This repository contains a sample application consisting of a React frontend and Flask backend.
-The Flask backend simulates a call to an API and there are ways to emulate different response codes or delays.
+The Flask backend simulates a call to an API (using httbin in a Docker container) and there are ways to emulate different response codes or delays.
+The app reports Sentry Errors, Traces and Metrics.
 
 ## Setup
 
@@ -28,4 +29,4 @@ The Flask backend simulates a call to an API and there are ways to emulate diffe
 This should open the browser at http://127.0.0.1:3000.
 
 ## Emulating Problems
-
+Open `backend/app.py` - at around line 30 you find the call to the third party service. The inline comments contain examples how to simulate different problems, like delays or an error 500. 
