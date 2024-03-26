@@ -1,0 +1,101 @@
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full height of the viewport */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Optional: Update the font */
+  }
+  
+  input {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 16px;
+    width: calc(100% - 20px); /* Full width minus padding */
+    max-width: 400px; /* Maximum width */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Rounded corners for the input */
+  }
+  
+  .button {
+    padding: 15px 30px; /* Increase padding for a larger size */
+    font-size: 18px; /* Increase font size for better readability */
+    font-weight: bold;
+    background-color: #452650; /* Set the background color */
+    color: white; /* Ensure text color is white for better contrast */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Optional: Add slight rounding to corners */
+    cursor: pointer; /* Change cursor to pointer to indicate clickability */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .button:hover {
+    background-color: #381f47; /* Slightly darker shade on hover for interactive feedback */
+  }
+  
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 90%;
+    max-width: 400px; /* Maximum width, but can adjust based on preference */
+    margin: 20px; /* Spacing around the card */
+  }
+  
+  /* Additional global styles for body to remove margin and padding */
+  body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background to contrast with the card */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+  }
+  
+  .card-image {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 8px; /* Match the card's border radius */
+    border-top-right-radius: 8px; /* Match the card's border radius */
+    border-bottom-left-radius: 8px; /* Match the card's border radius */
+    border-bottom-right-radius: 8px; /* Match the card's border radius */
+    object-fit: cover; /* Ensure the image covers the space well */
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #452650;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Center spinner and text within the card */
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Adjust based on your card's dimensions */
+  }
+  
+  .spinner-text {
+    margin-top: 10px; /* Space between spinner and text */
+    color: #452650; /* Adjust the color to fit your design */
+    font-size: 16px;
+  }
+  
